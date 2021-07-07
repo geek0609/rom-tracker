@@ -4,6 +4,13 @@ import telebot
 import requests
 import json
 
+# Get Secrets from env
+# TODO: secrets arent working
+BOT_API = os.environ.get("BOT_API")
+CHAT_ID = os.environ.get("CHAT_ID")
+GH_TOKEN = os.environ.get("GH_TOKEN")
+bot = telebot.TeleBot(BOT_API, parse_mode="MARKDOWN")
+
 
 def send_mes(text):
     if text == "":
@@ -12,7 +19,7 @@ def send_mes(text):
 
 
 def update(repo):
-    file_name = repo.replace("/", "_") + ".txt"
+    file_name = "repo/" + repo.replace("/", "_") + ".txt"
     req = requests.get("https://api.github.com/repos/" + repo + "/commits").content
     converted = json.loads(req)
     shas = []
@@ -26,7 +33,7 @@ def update(repo):
 
 
 def get_diff (repo):
-    file_name = repo.replace("/", "_") + ".txt"
+    file_name = "repo/" + repo.replace("/", "_") + ".txt"
     req = requests.get("https://api.github.com/repos/" + repo + "/commits").content
     converted = json.loads(req)
     shas = []
@@ -51,7 +58,6 @@ def get_diff (repo):
         for different in differences:
             for x in converted:
                 if x['sha'] == different:
-                    print(x['commit']['message'], end="\n\n")
                     new_commits.append(x['commit']['message'])
         message = ""
         for i in new_commits:
@@ -59,13 +65,11 @@ def get_diff (repo):
         return message
 
 
-# Get Secrets from env
-BOT_API = os.environ.get("BOT_API")
-CHAT_ID = os.environ.get("CHAT_ID")
-GH_TOKEN = os.environ.get("GH_TOKEN")
+os.system("ls")
+
 
 # Connect bot
-bot = telebot.TeleBot(BOT_API, parse_mode="MARKDOWN")
+
 
 if GH_TOKEN == "":
     print("Token not found")
@@ -73,18 +77,34 @@ else:
     print("Token found")
 
 # Start of actual code
-file = open("roms.txt", "w+")
+file = open("repo/roms.txt", "r")
 repo = []
-
 for line in file.readlines():
     print("Currently tracking : " + line)
-    repo.append(line)
+    repo.append(line.replace("\n", ""))
 
 for rom in repo:
     # Check if new
-    if not get_diff(rom):
-        send_mes("New commit for " + str(rom) + "\n" + get_diff(rom))
+    result = get_diff(rom)
+    if result != False:
+        result.replace("_", "")
+        result.replace("*", "")
+        result.replace("`", "")
+        result.replace("/", "")
+        result.replace("|", "")
+        result.replace("#", "")
+        result.replace("]", "")
+        result.replace("(", "")
+        result.replace(")", "")
+        result.replace("\\", "")
+        result.strip("*")
+        print(result)
+        send_mes("Updating")
+        send_mes("New commit for " + str(rom) + "\n" + result[:2000])
+        os.system("cd repo")
         os.system("git add .")
         os.system("git commit -m \" Update SHAs for " + str(rom) + "\"" )
+        os.system("cd ..")
 
-os.system("git push https://geek0609: " + GH_TOKEN + "@github.com/geek0609/rom-tracker master")
+os.system("cd repo")
+os.system("git push https://geek0609: " + str(GH_TOKEN) + "@github.com/geek0609/rom-tracker master")

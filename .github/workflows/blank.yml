@@ -2,9 +2,6 @@ name: Tracker
 on:
   # Triggers the workflow on push events
   push:
-  # Run it on regular basis
-  schedule:
-    - cron: '*/1 * * * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -19,9 +16,9 @@ jobs:
         run: sudo git clone https://geek0609:${{ secrets.GITHUB_TOKEN }}@github.com/geek0609/rom-tracker repo
         # Clone repo to directory
       - name: Run main.py
-        run: python3 repo/main.py
+        run: sudo python3 repo/main.py
         env:
           BOT_API: ${{ secrets.BOT_API }}
           CHAT_ID: ${{ secrets.CHAT }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
