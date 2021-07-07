@@ -16,10 +16,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Clone-Repo
+        run: sudo git clone https://geek0609:${{ secrets.GITHUB_TOKEN }}@github.com/geek0609/rom-tracker repo
 
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Run main.py
+        run: python3 repo/main.py
+        env:
+          BOT_API: ${{ secrets.BOT_API }}
+          CHAT_ID: ${{ secrets.CHAT }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
