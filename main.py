@@ -58,11 +58,12 @@ for rom in repo:
     rom = rom.replace("\n", "")
     result = get_diff(rom)
     if result:
-        message = "New commit(s) in " + str(rom)
-        number = 0
+        message = "New commit(s) in " + str(rom) + "\n\n"
+        number = 1
         for commit in result:
             if number <= 10:
-                message = message + "https://github.com/" + str(rom) + "/commit/" + str(commit) + "\n"
+                # need to be in this format <a href="http://www.example.com/">inline URL</a>
+                message = message + "<a href=\"" + "https://github.com/" + str(rom) + "/commit/" + str(commit) + "\">Click me for commit " + str(number) + "</a>\n"
                 number = number + 1
             else:
                 break
