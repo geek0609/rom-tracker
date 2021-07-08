@@ -69,3 +69,4 @@ for rom in repo:
                 break
         send_mes(message)
         update(rom)
+        os.system("ls")
