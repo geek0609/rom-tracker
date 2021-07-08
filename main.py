@@ -60,6 +60,7 @@ for rom in repo:
     if result:
         message = "New commit(s) in " + str(rom) + "\n\n"
         number = 1
+        result.reverse()
         for commit in result:
             if number <= 10:
                 # need to be in this format <a href="http://www.example.com/">inline URL</a>
