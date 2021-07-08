@@ -32,4 +32,6 @@ jobs:
       - name: Run main.py
         run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }}
 
+      - name: Commit Changes
+        run: sudo bash git_commit.sh
 
