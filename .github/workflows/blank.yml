@@ -15,15 +15,21 @@ jobs:
   track:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    env:
+      BOT_API: ${{ secrets.BOT_API }}
+      CHAT_ID: ${{ secrets.CHAT }}
     steps:
-      - name: Clone-Repo
-        run: sudo git clone https://geek0609:${{ secrets.GITHUB_TOKEN }}@github.com/geek0609/rom-tracker repo
+      - name: Install Dep
+        run: sudo pip install pyTelegramBotAPI
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          repository: geek0609/rom-tracker
+          token: ${{ secrets.PAT }}
+          ref: new-implementation
 
       - name: Run main.py
-        run: python3 repo/main.py
-        env:
-          BOT_API: ${{ secrets.BOT_API }}
-          CHAT_ID: ${{ secrets.CHAT }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }}
+
 
