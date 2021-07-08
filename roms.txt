@@ -4,7 +4,6 @@ Spark-Rom/manifest
 ProjectSakura/android
 P-404/android_manifest
 AOSiP/platform_manifest
-ColtOSTemp/platform_manifest
 DotOS/manifest
 Evolution-X/manifest
 Havoc-OS/android_manifest
