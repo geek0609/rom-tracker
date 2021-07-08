@@ -21,5 +21,16 @@ if GH_TOKEN == "":
     print("Token not found")
 else:
     print("Token found")
+os.system("sudo git clone https://github.com/ProjectSakura/android track && cd track && sudo git log | tee log.txt")
+file = open("track/log.txt")
+message = ""
+for line in file.readlines():
+    message = message + line.strip("/n")
 
+message = message.replace("_" "")
+message = message.replace("*" "")
+message = message.replace("`" "")
+message = message.replace("[" "")
+message = message.replace("]" "")
+send_mes(message[:2000])
 send_mes("It is working")

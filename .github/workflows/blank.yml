@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Clone-Repo
-        run: sudo git clone https://geek0609:${{ secrets.GITHUB_TOKEN }}@github.com/geek0609/rom-tracker repo
+        run: sudo git clone https://geek0609:${{ secrets.GITHUB_TOKEN }}@github.com/geek0609/rom-tracker repo -b git-log
 
       - name: Run main.py
         run: python3 repo/main.py
