@@ -4,3 +4,11 @@ exthmui/android
 exthmui/android_frameworks_base
 Zeus-OS/android_manifest
 Zeus-OS/android_frameworks_base
+CalyxOS/platform_manifest
+CalyxOS/platform_frameworks_base
+bananadroid/android_manifest
+bananadroid/android_frameworks_base
+Fusion-OS/android_manifest
+Fusion-OS/android_frameworks_base
+Bootleggers-BrokenLab/manifest
+Bootleggers-BrokenLab/frameworks_base
