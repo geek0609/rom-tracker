@@ -40,9 +40,14 @@ def get_diff (repo):
         shas.append(x['sha'])
 
     prev_sha = []
-    with open(file_name, "w+") as f:
-        for line in f:
-            prev_sha.append(str(line.strip()))
+    file = open(file_name, "r")
+    for line in file.readlines():
+        prev_sha.append(line.replace("\n", ""))
+
+    print(shas)
+    print(prev_sha)
+    if shas == prev_sha:
+        return False
 
     first_set = set(shas)
     sec_set = set(prev_sha)
@@ -61,7 +66,7 @@ for rom in repo:
     # Check if new
     rom = rom.replace("\n", "")
     result = get_diff(rom)
-    if result:
+    if result != False:
         message = "New commit(s) in " + str(rom) + "\n\n"
         number = 1
         result.reverse()
@@ -75,3 +80,5 @@ for rom in repo:
         send_mes(message)
         update(rom)
         os.system("ls")
+    else:
+        print("All up to date")
