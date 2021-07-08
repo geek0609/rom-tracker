@@ -3,6 +3,7 @@ import telebot
 import sys
 import requests
 import json
+import time
 
 
 def send_mes(text):
@@ -78,6 +79,8 @@ for rom in repo:
             else:
                 break
         send_mes(message)
+        time.sleep(30)
+        # to not spam api 
         update(rom)
         os.system("ls")
     else:
