@@ -14,7 +14,7 @@ def send_mes(text):
 # Init telegram bot
 BOT_API = sys.argv[2]
 CHAT_ID = sys.argv[1]
-bot = telebot.TeleBot(BOT_API, parse_mode=None)
+bot = telebot.TeleBot(BOT_API, parse_mode="HTML")
 
 
 def update(repo):
