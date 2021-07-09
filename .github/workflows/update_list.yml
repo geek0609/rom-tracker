@@ -3,10 +3,12 @@
 name: Update List
 on:
   push:
+    # Only update if these files are changed
     paths:
       - 'update.py'
       - 'roms.txt'
       - 'git_update_list.sh'
+  # Enables us to manually run it
   workflow_dispatch:
 
 jobs:
