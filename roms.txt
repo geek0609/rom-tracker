@@ -18,3 +18,11 @@ yaap/manifest
 PixelOS-Pixelish/manifest
 LESSAOSP/manifest
 Colt-Enigma/platform_manifest
+RevengeOS/android_manifest
+cygnus-rom/manifest
+syberia-project/manifest
+crdroidandroid/android
+Wave-Project/manifest
+ShapeShiftOS/android_manifest
+PotatoProject/manifest
+Project-Awaken/android_manifest
