@@ -8,8 +8,9 @@ import time
 
 def send_mes(text):
     if text == "":
-        text = " "
+        text = "NO/EMPTY TEXT GIVEN TO SEND"
     return bot.send_message(CHAT_ID, text)
+# Send a message
 
 
 # Init telegram bot
@@ -20,6 +21,7 @@ bot = telebot.TeleBot(BOT_API, parse_mode="HTML")
 
 def update(repo):
     file_name = repo.replace("/", "_") + ".txt"
+    # Sends a request to github api to get the latest commits
     req = requests.get("https://api.github.com/repos/" + repo + "/commits").content
     converted = json.loads(req)
     shas = []
@@ -37,23 +39,23 @@ def get_diff (repo):
     file_name = repo.replace("/", "_") + ".txt"
     req = requests.get("https://api.github.com/repos/" + repo + "/commits").content
     converted = json.loads(req)
+    # Fetches new commits (if any) from API
     shas = []
     for x in converted:
         shas.append(x['sha'])
-
+    # Reads previous commits from where it is stored
     prev_sha = []
     file = open(file_name, "r")
     for line in file.readlines():
         prev_sha.append(line.replace("\n", ""))
-
     print(shas)
     print(prev_sha)
     if shas == prev_sha:
         return False
-
     first_set = set(shas)
     sec_set = set(prev_sha)
     differences = first_set - sec_set
+    # TODO: Remove this useless logic
     if len(list(differences)) == 0:
         print("No change")
         return False
@@ -64,20 +66,24 @@ def get_diff (repo):
 # Start of actual code
 file = open("roms.txt", "r")
 repo = file.readlines()
+# Read roms from roms.txt
 for rom in repo:
-    # Check if new
     rom = rom.replace("\n", "")
     file_name = rom.replace("/", "_") + ".txt"
     if os.path.isfile(file_name):
         print(file_name + " Exists")
     else:
+        # In case the file is just added to the list, it needs to be updated first,
+        # before it can compare for new commits
         print("Not exist")
         update(rom)
+    # Check if new commit
     result = get_diff(rom)
+    # I can use if result but i choose to do this for sake of my understanding
     if result != False:
         message = "New commit(s) in " + str(rom) + "\n\n"
         number = 1
-        result.reverse()
+        result.reverse() # Else it shows way older commits first
         for commit in result:
             if number <= 10:
                 # need to be in this format <a href="http://www.example.com/">inline URL</a>
@@ -89,6 +95,5 @@ for rom in repo:
         time.sleep(30)
         # to not spam api 
         update(rom)
-        os.system("ls")
     else:
-        print("All up to date")
+        print("All up to date") # For Logging purposes
