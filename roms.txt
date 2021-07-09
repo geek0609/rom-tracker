@@ -17,3 +17,4 @@ StyxProject/manifest
 yaap/manifest
 PixelOS-Pixelish/manifest
 LESSAOSP/manifest
+Colt-Enigma/platform_manifest
