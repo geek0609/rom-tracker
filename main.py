@@ -25,7 +25,8 @@ def update(repo):
     shas = []
     for x in converted:
         shas.append(x['sha'])
-    os.remove(file_name)
+    if os.path.isfile(file_name):
+        os.remove(file_name)
     with open(file_name, "w+") as f:
         for s in shas:
             f.write(str(s) + "\n")
@@ -66,6 +67,12 @@ repo = file.readlines()
 for rom in repo:
     # Check if new
     rom = rom.replace("\n", "")
+    file_name = rom.replace("/", "_") + ".txt"
+    if os.path.isfile(file_name):
+        print(file_name + " Exists")
+    else:
+        print("Not exist")
+        update(rom)
     result = get_diff(rom)
     if result != False:
         message = "New commit(s) in " + str(rom) + "\n\n"
