@@ -16,3 +16,4 @@ ProtonAOSP/android_manifest
 StyxProject/manifest
 yaap/manifest
 PixelOS-Pixelish/manifest
+LESSAOSP/manifest
