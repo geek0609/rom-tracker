@@ -52,7 +52,7 @@ def get_diff (repo):
 
     first_set = set(shas)
     sec_set = set(prev_sha)
-    differences = (first_set - sec_set).union(sec_set - first_set)
+    differences = first_set - sec_set
     if len(list(differences)) == 0:
         print("No change")
         return False
