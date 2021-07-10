@@ -5,8 +5,8 @@ on:
   # Run after first one
   workflow_run:
     workflows: ["Tracker0"]
-
-  workflow_dispatch:
+    types:
+      - completed
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
