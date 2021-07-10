@@ -32,7 +32,7 @@ jobs:
           ref: new-implementation
 
       - name: Run main.py
-        run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }}
+        run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms.txt
 
       - name: Commit and Push
         run: sudo bash git_commit.sh
