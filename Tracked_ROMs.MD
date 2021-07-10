@@ -34,6 +34,13 @@
  * [ShapeShiftOS/android_manifest](https://github.com/ShapeShiftOS/android_manifest)
  * [PotatoProject/manifest](https://github.com/PotatoProject/manifest)
  * [Project-Awaken/android_manifest](https://github.com/Project-Awaken/android_manifest)
+ * [CherishOS/android_manifest](https://github.com/CherishOS/android_manifest)
+ * [Zeus-OS/android_manifest](https://github.com/Zeus-OS/android_manifest)
+ * [Octavi-OS/platform_manifest](https://github.com/Octavi-OS/platform_manifest)
+ * [AOSPA/manifest](https://github.com/AOSPA/manifest)
+ * [RohieOS/manifest](https://github.com/RohieOS/manifest)
+ * [AICP/platform_manifest](https://github.com/AICP/platform_manifest)
+ * [HyconOS/manifest](https://github.com/HyconOS/manifest)
 
 
-Last updated on : 2021-07-09 16:21:54.931411 UTC
+Last updated on : 2021-07-10 11:56:00.704882 UTC
