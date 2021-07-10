@@ -12,6 +12,11 @@ roms = open("roms.txt", "r")
 for rom in roms.readlines():
     content = content + " * [" + rom.strip("\n") + "](https://github.com/" + rom.strip("\n") + ")\n"
 
+roms1 = open("roms1.txt", "r")
+
+for rom in roms1.readlines():
+    content = content + " * [" + rom.strip("\n") + "](https://github.com/" + rom.strip("\n") + ")\n"
+
 content = content + "\n\nLast updated on : " + str(datetime.datetime.utcnow()) + " UTC"
 
 readme.write(content)
