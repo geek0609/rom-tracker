@@ -41,6 +41,12 @@
  * [RohieOS/manifest](https://github.com/RohieOS/manifest)
  * [AICP/platform_manifest](https://github.com/AICP/platform_manifest)
  * [HyconOS/manifest](https://github.com/HyconOS/manifest)
+ * [PixelPlusUI-Elle/manifest](https://github.com/PixelPlusUI-Elle/manifest)
+ * [CAF-Extended/manifest](https://github.com/CAF-Extended/manifest)
+ * [ConquerOS/manifest](https://github.com/ConquerOS/manifest)
+ * [TenX-OS/manifest_TenX](https://github.com/TenX-OS/manifest_TenX)
+ * [Project-Xtended/manifest](https://github.com/Project-Xtended/manifest)
+ * [exthmui/android](https://github.com/exthmui/android)
 
 
-Last updated on : 2021-07-10 19:28:51.802403 UTC
+Last updated on : 2021-07-10 19:32:35.435325 UTC
