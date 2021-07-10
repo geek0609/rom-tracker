@@ -1,0 +1,6 @@
+PixelPlusUI-Elle/manifest
+CAF-Extended/manifest
+ConquerOS/manifest
+TenX-OS/manifest_TenX
+Project-Xtended/manifest
+exthmui/android
