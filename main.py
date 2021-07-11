@@ -20,11 +20,11 @@ REPO_LIST = sys.argv[3]
 bot = telebot.TeleBot(BOT_API, parse_mode="HTML")
 
 
-def update(repo):
+def update(repo, converted):
     file_name = repo.replace("/", "_") + ".txt"
     # Sends a request to github api to get the latest commits
-    req = requests.get("https://api.github.com/repos/" + repo + "/commits").content
-    converted = json.loads(req)
+    # req = requests.get("https://api.github.com/repos/" + repo + "/commits").content
+    # converted = json.loads(req)
     shas = []
     for x in converted:
         shas.append(x['sha'])
@@ -36,10 +36,10 @@ def update(repo):
     return True
 
 
-def get_diff (repo):
+def get_diff (repo, converted):
     file_name = repo.replace("/", "_") + ".txt"
-    req = requests.get("https://api.github.com/repos/" + repo + "/commits").content
-    converted = json.loads(req)
+    # req = requests.get("https://api.github.com/repos/" + repo + "/commits").content
+    # converted = json.loads(req)
     # Fetches new commits (if any) from API
     shas = []
     for x in converted:
@@ -71,15 +71,17 @@ repo = file.readlines()
 for rom in repo:
     rom = rom.replace("\n", "")
     file_name = rom.replace("/", "_") + ".txt"
+    req = requests.get("https://api.github.com/repos/" + rom + "/commits").content
+    converted = json.loads(req)
     if os.path.isfile(file_name):
         print(file_name + " Exists")
     else:
         # In case the file is just added to the list, it needs to be updated first,
         # before it can compare for new commits
         print("Not exist")
-        update(rom)
+        update(rom, converted)
     # Check if new commit
-    result = get_diff(rom)
+    result = get_diff(rom, converted)
     # I can use if result but i choose to do this for sake of my understanding
     if result != False:
         message = "New commit(s) in " + str(rom) + "\n\n"
@@ -95,6 +97,6 @@ for rom in repo:
         send_mes(message)
         time.sleep(30)
         # to not spam api 
-        update(rom)
+        update(rom, converted)
     else:
         print("All up to date") # For Logging purposes
