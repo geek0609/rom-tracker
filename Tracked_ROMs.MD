@@ -53,6 +53,6 @@
 45. [Project-Xtended/manifest](https://github.com/Project-Xtended/manifest)
 46. [exthmui/android](https://github.com/exthmui/android)
 
-### Total number of repos tracked: 47
+### Total number of repos tracked: 46
 
-Last updated on : 2021-07-11 09:39:29.821365 UTC
+Last updated on : 2021-07-11 09:43:42.463597 UTC
