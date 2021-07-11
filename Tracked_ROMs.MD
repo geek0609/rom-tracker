@@ -42,7 +42,7 @@
 34. [AICP/platform_manifest](https://github.com/AICP/platform_manifest)
 35. [HyconOS/manifest](https://github.com/HyconOS/manifest)
 36. [AOKP/platform_manifest](https://github.com/AOKP/platform_manifest)
-37. [FlymeOS/manifest](https://github.com/FlymeOS/manifest)
+37. [LineageOS/android](https://github.com/LineageOS/android)
 38. [GrapheneOS/platform_manifest](https://github.com/GrapheneOS/platform_manifest)
 39. [ResurrectionRemix/platform_manifest](https://github.com/ResurrectionRemix/platform_manifest)
 40. [Extended-UI/android_manifest](https://github.com/Extended-UI/android_manifest)
@@ -55,4 +55,4 @@
 
 ### Total number of repos tracked: 46
 
-Last updated on : 2021-07-11 09:43:42.463597 UTC
+Last updated on : 2021-07-11 09:53:42.794391 UTC
