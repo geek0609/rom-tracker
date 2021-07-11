@@ -34,7 +34,7 @@ RohieOS/manifest
 AICP/platform_manifest
 HyconOS/manifest
 AOKP/platform_manifest
-FlymeOS/manifest
+LineageOS/android
 GrapheneOS/platform_manifest
 ResurrectionRemix/platform_manifest
 Extended-UI/android_manifest
