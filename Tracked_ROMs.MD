@@ -46,13 +46,27 @@
 38. [GrapheneOS/platform_manifest](https://github.com/GrapheneOS/platform_manifest)
 39. [ResurrectionRemix/platform_manifest](https://github.com/ResurrectionRemix/platform_manifest)
 40. [Extended-UI/android_manifest](https://github.com/Extended-UI/android_manifest)
-41. [PixelPlusUI-Elle/manifest](https://github.com/PixelPlusUI-Elle/manifest)
-42. [CAF-Extended/manifest](https://github.com/CAF-Extended/manifest)
-43. [ConquerOS/manifest](https://github.com/ConquerOS/manifest)
-44. [TenX-OS/manifest_TenX](https://github.com/TenX-OS/manifest_TenX)
-45. [Project-Xtended/manifest](https://github.com/Project-Xtended/manifest)
-46. [exthmui/android](https://github.com/exthmui/android)
+41. [PixysOS/manifest](https://github.com/PixysOS/manifest)
+42. [Los-FE/manifest](https://github.com/Los-FE/manifest)
+43. [ForkLineageOS/android](https://github.com/ForkLineageOS/android)
+44. [BlissRoms/platform_manifest](https://github.com/BlissRoms/platform_manifest)
+45. [CarbonROM/android](https://github.com/CarbonROM/android)
+46. [dotOS-FE/manifest](https://github.com/dotOS-FE/manifest)
+47. [FlokoROM/manifesto](https://github.com/FlokoROM/manifesto)
+48. [Project-LegionOS/manifest](https://github.com/Project-LegionOS/manifest)
+49. [SpiceOS/android](https://github.com/SpiceOS/android)
+50. [SuperiorOS/manifest](https://github.com/SuperiorOS/manifest)
+51. [Palladium-OS/platform_manifest](https://github.com/Palladium-OS/platform_manifest)
+52. [HornbillOS/manifest](https://github.com/HornbillOS/manifest)
+53. [Kang-OS-R/android_manifest](https://github.com/Kang-OS-R/android_manifest)
+54. [CesiumOS-org/manifest](https://github.com/CesiumOS-org/manifest)
+55. [PixelPlusUI-Elle/manifest](https://github.com/PixelPlusUI-Elle/manifest)
+56. [CAF-Extended/manifest](https://github.com/CAF-Extended/manifest)
+57. [ConquerOS/manifest](https://github.com/ConquerOS/manifest)
+58. [TenX-OS/manifest_TenX](https://github.com/TenX-OS/manifest_TenX)
+59. [Project-Xtended/manifest](https://github.com/Project-Xtended/manifest)
+60. [exthmui/android](https://github.com/exthmui/android)
 
-### Total number of repos tracked: 46
+### Total number of repos tracked: 60
 
-Last updated on : 2021-07-11 09:53:42.794391 UTC
+Last updated on : 2021-07-11 10:16:08.905490 UTC
