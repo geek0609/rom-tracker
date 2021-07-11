@@ -38,3 +38,17 @@ LineageOS/android
 GrapheneOS/platform_manifest
 ResurrectionRemix/platform_manifest
 Extended-UI/android_manifest
+PixysOS/manifest
+Los-FE/manifest
+ForkLineageOS/android
+BlissRoms/platform_manifest
+CarbonROM/android
+dotOS-FE/manifest
+FlokoROM/manifesto
+Project-LegionOS/manifest
+SpiceOS/android
+SuperiorOS/manifest
+Palladium-OS/platform_manifest
+HornbillOS/manifest
+Kang-OS-R/android_manifest
+CesiumOS-org/manifest
