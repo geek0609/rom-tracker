@@ -60,13 +60,14 @@
 52. [HornbillOS/manifest](https://github.com/HornbillOS/manifest)
 53. [Kang-OS-R/android_manifest](https://github.com/Kang-OS-R/android_manifest)
 54. [CesiumOS-org/manifest](https://github.com/CesiumOS-org/manifest)
-55. [PixelPlusUI-Elle/manifest](https://github.com/PixelPlusUI-Elle/manifest)
-56. [CAF-Extended/manifest](https://github.com/CAF-Extended/manifest)
-57. [ConquerOS/manifest](https://github.com/ConquerOS/manifest)
-58. [TenX-OS/manifest_TenX](https://github.com/TenX-OS/manifest_TenX)
-59. [Project-Xtended/manifest](https://github.com/Project-Xtended/manifest)
-60. [exthmui/android](https://github.com/exthmui/android)
+55. [amyROM/android](https://github.com/amyROM/android)
+56. [PixelPlusUI-Elle/manifest](https://github.com/PixelPlusUI-Elle/manifest)
+57. [CAF-Extended/manifest](https://github.com/CAF-Extended/manifest)
+58. [ConquerOS/manifest](https://github.com/ConquerOS/manifest)
+59. [TenX-OS/manifest_TenX](https://github.com/TenX-OS/manifest_TenX)
+60. [Project-Xtended/manifest](https://github.com/Project-Xtended/manifest)
+61. [exthmui/android](https://github.com/exthmui/android)
 
-### Total number of repos tracked: 60
+### Total number of repos tracked: 61
 
-Last updated on : 2021-07-11 10:16:08.905490 UTC
+Last updated on : 2021-07-14 09:07:00.873203 UTC
