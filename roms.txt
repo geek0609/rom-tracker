@@ -52,3 +52,4 @@ Palladium-OS/platform_manifest
 HornbillOS/manifest
 Kang-OS-R/android_manifest
 CesiumOS-org/manifest
+amyROM/android
