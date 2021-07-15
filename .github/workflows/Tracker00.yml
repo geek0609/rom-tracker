@@ -2,16 +2,6 @@
 
 name: Tracker0
 on:
-  # Triggers the workflow on push events
-  push:
-    paths-ignore: 
-      - 'update.py'
-      - 'roms.txt'
-      - 'git_update_list.sh'
-      - 'roms1.txt'
-      - 'roms2.txt'
-      - 'roms3.txt'
-      - 'roms4.txt'
   # Should make sure it runs regularly
   schedule:
     - cron: '*/30 * * * *'
