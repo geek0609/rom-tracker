@@ -1,7 +1,7 @@
 import datetime
 readme = open("Tracked_ROMs.MD", "w+")
 # W+ to rewrite entire list everytime
-content = "# The list of Manifest Repo of the ROMs that are tracked" \
+content = "# The list of Repos of the ROMs that are tracked" \
           "\n\n*The list is automatically updated*" \
           "\n\n*Project is still work in progress*" \
           "\n\n### Telegram Channel : [Click Me](https://t.me/ROM_tracker)" \
@@ -22,6 +22,18 @@ for rom in roms1.readlines():
 roms2 = open("roms2.txt", "r")
 
 for rom in roms2.readlines():
+    content = content + str(number) + ". [" + rom.strip("\n") + "](https://github.com/" + rom.strip("\n") + ")\n"
+    number += 1
+
+roms3 = open("roms3.txt", "r")
+
+for rom in roms3.readlines():
+    content = content + str(number) + ". [" + rom.strip("\n") + "](https://github.com/" + rom.strip("\n") + ")\n"
+    number += 1
+
+roms4 = open("roms4.txt", "r")
+
+for rom in roms4.readlines():
     content = content + str(number) + ". [" + rom.strip("\n") + "](https://github.com/" + rom.strip("\n") + ")\n"
     number += 1
 
