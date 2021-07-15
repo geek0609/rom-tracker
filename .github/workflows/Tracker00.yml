@@ -61,3 +61,28 @@ jobs:
 
       - name: Commit and Push
         run: sudo bash git_commit.sh
+
+  track2:
+    needs: track1
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    env:
+      BOT_API: ${{ secrets.BOT_API }}
+      CHAT_ID: ${{ secrets.CHAT }}
+    # BOT_ID and CHAT_ID are used to communicate with Telegram API
+    steps:
+      - name: Install Dep
+        run: sudo pip install pyTelegramBotAPI
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          repository: geek0609/rom-tracker
+          token: ${{ secrets.PAT }}
+          ref: new-implementation
+
+      - name: Run main.py
+        run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms2.txt
+
+      - name: Commit and Push
+        run: sudo bash git_commit.sh
