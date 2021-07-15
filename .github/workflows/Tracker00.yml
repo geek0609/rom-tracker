@@ -4,6 +4,14 @@ name: Tracker0
 on:
   # Triggers the workflow on push events
   push:
+    paths-ignore: 
+      - 'update.py'
+      - 'roms.txt'
+      - 'git_update_list.sh'
+      - 'roms1.txt'
+      - 'roms2.txt'
+      - 'roms3.txt'
+      - 'roms4.txt'
   # Should make sure it runs regularly
   schedule:
     - cron: '*/30 * * * *'
@@ -83,6 +91,56 @@ jobs:
 
       - name: Run main.py
         run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms2.txt
+
+      - name: Commit and Push
+        run: sudo bash git_commit.sh
+
+  track3:
+    needs: track2
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    env:
+      BOT_API: ${{ secrets.BOT_API }}
+      CHAT_ID: ${{ secrets.CHAT }}
+    # BOT_ID and CHAT_ID are used to communicate with Telegram API
+    steps:
+      - name: Install Dep
+        run: sudo pip install pyTelegramBotAPI
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          repository: geek0609/rom-tracker
+          token: ${{ secrets.PAT }}
+          ref: new-implementation
+
+      - name: Run main.py
+        run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms3.txt
+
+      - name: Commit and Push
+        run: sudo bash git_commit.sh
+
+  track4:
+    needs: track3
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    env:
+      BOT_API: ${{ secrets.BOT_API }}
+      CHAT_ID: ${{ secrets.CHAT }}
+    # BOT_ID and CHAT_ID are used to communicate with Telegram API
+    steps:
+      - name: Install Dep
+        run: sudo pip install pyTelegramBotAPI
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          repository: geek0609/rom-tracker
+          token: ${{ secrets.PAT }}
+          ref: new-implementation
+
+      - name: Run main.py
+        run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms4.txt
 
       - name: Commit and Push
         run: sudo bash git_commit.sh
