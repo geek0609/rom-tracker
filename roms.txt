@@ -53,3 +53,4 @@ HornbillOS/manifest
 Kang-OS-R/android_manifest
 CesiumOS-org/manifest
 amyROM/android
+CipherOS/android_manifest
