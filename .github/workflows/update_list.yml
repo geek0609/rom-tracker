@@ -9,6 +9,7 @@ on:
       - 'roms.txt'
       - 'git_update_list.sh'
       - 'roms1.txt'
+      - 'roms2.txt'
   # Enables us to manually run it
   workflow_dispatch:
 

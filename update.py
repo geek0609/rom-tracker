@@ -19,6 +19,12 @@ for rom in roms1.readlines():
     content = content + str(number) + ". [" + rom.strip("\n") + "](https://github.com/" + rom.strip("\n") + ")\n"
     number += 1
 
+roms2 = open("roms2.txt", "r")
+
+for rom in roms2.readlines():
+    content = content + str(number) + ". [" + rom.strip("\n") + "](https://github.com/" + rom.strip("\n") + ")\n"
+    number += 1
+
 content = content + "\n### Total number of repos tracked: " + str(number-1) +"\n\nLast updated on : " + str(datetime.datetime.utcnow()) + " UTC"
 
 readme.write(content)
