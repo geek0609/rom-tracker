@@ -9,7 +9,7 @@ import time
 def send_mes(text):
     if text == "":
         text = "NO/EMPTY TEXT GIVEN TO SEND"
-    return bot.send_message(CHAT_ID, text)
+    return bot.send_message(CHAT_ID, text, disable_web_page_preview=True)
 # Send a message
 
 
