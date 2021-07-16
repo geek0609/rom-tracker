@@ -2,8 +2,6 @@
 
 *The list is automatically updated*
 
-*Project is still work in progress*
-
 ### Telegram Channel : [Click Me](https://t.me/ROM_tracker)
 ## ROMs:
 1. [ArrowOS/android_manifest](https://github.com/ArrowOS/android_manifest)
@@ -135,4 +133,4 @@
 
 ### Total number of repos tracked: 126
 
-Last updated on : 2021-07-15 19:35:35.712640 UTC
+Last updated on : 2021-07-16 05:32:09.081288 UTC
