@@ -33,6 +33,7 @@ jobs:
         run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms.txt
 
       - name: Commit and Push
+        if: ${{ always() }}
         run: sudo bash git_commit.sh
 
   track1:
@@ -58,6 +59,7 @@ jobs:
         run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms1.txt
 
       - name: Commit and Push
+        if: ${{ always() }}
         run: sudo bash git_commit.sh
 
   track2:
@@ -83,6 +85,7 @@ jobs:
         run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms2.txt
 
       - name: Commit and Push
+        if: ${{ always() }}
         run: sudo bash git_commit.sh
 
   track3:
@@ -108,6 +111,7 @@ jobs:
         run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms3.txt
 
       - name: Commit and Push
+        if: ${{ always() }}
         run: sudo bash git_commit.sh
 
   track4:
@@ -133,4 +137,5 @@ jobs:
         run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms4.txt
 
       - name: Commit and Push
+        if: ${{ always() }}
         run: sudo bash git_commit.sh
