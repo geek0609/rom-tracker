@@ -3,7 +3,6 @@ readme = open("Tracked_ROMs.MD", "w+")
 # W+ to rewrite entire list everytime
 content = "# The list of Repos of the ROMs that are tracked" \
           "\n\n*The list is automatically updated*" \
-          "\n\n*Project is still work in progress*" \
           "\n\n### Telegram Channel : [Click Me](https://t.me/ROM_tracker)" \
           "\n## ROMs:\n"
 
