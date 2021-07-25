@@ -37,6 +37,7 @@ jobs:
         run: sudo bash git_commit.sh
 
   track1:
+    if: always()
     needs: track0
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -63,6 +64,7 @@ jobs:
         run: sudo bash git_commit.sh
 
   track2:
+    if: always()
     needs: track1
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -89,6 +91,7 @@ jobs:
         run: sudo bash git_commit.sh
 
   track3:
+    if: always()
     needs: track2
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -115,6 +118,7 @@ jobs:
         run: sudo bash git_commit.sh
 
   track4:
+    if: always()
     needs: track3
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
