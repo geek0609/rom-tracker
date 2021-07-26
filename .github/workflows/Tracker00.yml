@@ -30,7 +30,7 @@ jobs:
           ref: new-implementation
 
       - name: Run main.py
-        run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms.txt
+        run: sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms.txt
 
       - name: Commit and Push
         if: ${{ always() }}
@@ -56,7 +56,7 @@ jobs:
           ref: new-implementation
 
       - name: Run main.py
-        run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms1.txt
+        run: sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms1.txt
 
       - name: Commit and Push
         if: ${{ always() }}
@@ -82,7 +82,7 @@ jobs:
           ref: new-implementation
 
       - name: Run main.py
-        run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms2.txt
+        run: sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms2.txt
 
       - name: Commit and Push
         if: ${{ always() }}
@@ -108,7 +108,7 @@ jobs:
           ref: new-implementation
 
       - name: Run main.py
-        run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms3.txt
+        run: sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms3.txt
 
       - name: Commit and Push
         if: ${{ always() }}
@@ -134,7 +134,7 @@ jobs:
           ref: new-implementation
 
       - name: Run main.py
-        run: ls && sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms4.txt
+        run: sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms4.txt
 
       - name: Commit and Push
         if: ${{ always() }}
