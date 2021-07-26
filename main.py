@@ -23,6 +23,7 @@ import sys
 import requests
 import json
 import time
+import random
 
 
 def send_mes(text):
@@ -31,6 +32,11 @@ def send_mes(text):
     return bot.send_message(CHAT_ID, text, disable_web_page_preview=True)
 # Send a message
 
+timeout = random.randint(0,60)
+
+for i in range(timeout):
+    print ("Waiting for " + str(timeout) + " before starting, this random wait helps avoid conflicts during push at same time\n\nTime remaining : " + str(timeout - i))
+    time.sleep(1)
 
 # Init telegram bot
 BOT_API = sys.argv[2]
