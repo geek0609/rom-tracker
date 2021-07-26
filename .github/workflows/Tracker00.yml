@@ -38,7 +38,6 @@ jobs:
 
   track1:
     if: always()
-    needs: track0
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
@@ -65,7 +64,6 @@ jobs:
 
   track2:
     if: always()
-    needs: track1
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
@@ -92,7 +90,6 @@ jobs:
 
   track3:
     if: always()
-    needs: track2
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
@@ -119,7 +116,6 @@ jobs:
 
   track4:
     if: always()
-    needs: track3
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
