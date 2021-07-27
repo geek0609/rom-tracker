@@ -55,7 +55,7 @@ def update(repo, converted):
         shas.append(x['sha'])
     if os.path.isfile(file_name):
         os.remove(file_name)
-    with open(file_name, "w+") as f:
+    with open(f'roms/{file_name}', "w+") as f:
         for s in shas:
             f.write(str(s) + "\n")
     return True
@@ -71,7 +71,7 @@ def get_diff (repo, converted):
         shas.append(x['sha'])
     # Reads previous commits from where it is stored
     prev_sha = []
-    file = open(file_name, "r")
+    file = open("roms/" + file_name, "r")
     for line in file.readlines():
         prev_sha.append(line.replace("\n", ""))
     print(shas)
@@ -98,7 +98,7 @@ for rom in repo:
     file_name = rom.replace("/", "_") + ".txt"
     req = requests.get("https://api.github.com/repos/" + rom + "/commits").content
     converted = json.loads(req)
-    if os.path.isfile(file_name):
+    if os.path.isfile("roms/" + file_name):
         print(file_name + " Exists")
     else:
         # In case the file is just added to the list, it needs to be updated first,
