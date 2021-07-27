@@ -55,7 +55,7 @@ def update(repo, converted):
         shas.append(x['sha'])
     if os.path.isfile(file_name):
         os.remove(file_name)
-    with open(file_name, "w+") as f:
+    with open(f'roms/{file_name}', "w+") as f:
         for s in shas:
             f.write(str(s) + "\n")
     return True
