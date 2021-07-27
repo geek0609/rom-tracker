@@ -8,10 +8,6 @@ on:
       - 'update.py'
       - 'roms.txt'
       - 'git_update_list.sh'
-      - 'roms1.txt'
-      - 'roms2.txt'
-      - 'roms3.txt'
-      - 'roms4.txt'
 
   # Enables us to manually run it
   workflow_dispatch:

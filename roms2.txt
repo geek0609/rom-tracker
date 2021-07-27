@@ -1,6 +1,0 @@
-Project-Xtended/manifest
-Project-Xtended/frameworks_base
-exthmui/android
-exthmui/android_frameworks_base
-Zeus-OS/android_manifest
-Zeus-OS/android_frameworks_base
