@@ -12,5 +12,5 @@ Fusion-OS/android_manifest
 Fusion-OS/android_frameworks_base
 Bootleggers-BrokenLab/manifest
 Bootleggers-BrokenLab/frameworks_base
-pa-surya/android_frameworks_base
-pa-surya/android_packages_apps_Settings
+pa-gr/android_frameworks_base
+pa-gr/android_packages_apps_Settings
