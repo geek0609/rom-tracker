@@ -14,3 +14,5 @@ Bootleggers-BrokenLab/manifest
 Bootleggers-BrokenLab/frameworks_base
 pa-gr/android_frameworks_base
 pa-gr/android_packages_apps_Settings
+PixelOS-ginkgo/frameworks_base
+PixelOS-ginkgo/packages_apps_Settings
