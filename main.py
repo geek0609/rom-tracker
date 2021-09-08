@@ -116,7 +116,7 @@ for rom in repo:
         for commit in result:
             if number <= 10:
                 # need to be in this format <a href="http://www.example.com/">inline URL</a>
-                message = message + "<a href=\"" + "https://github.com/" + str(rom) + "/commit/" + str(commit) + "\">Click me for commit " + str(number) + "</a>\n"
+                message = message + "<a href=\"" + "https://github.com/" + str(rom) + "/commit/" + str(commit) + "\">Commit " + str(number) + "</a>\n"
                 number = number + 1
             else:
                 break
