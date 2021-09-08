@@ -120,7 +120,7 @@ for rom in repo:
                 number = number + 1
             else:
                 break
-        send_mes(message)
+        send_mes(message + "\n\n@rom_tracker | #" + str(rom).split("/")[0])
         time.sleep(30)
         # to not spam api 
         update(rom, converted)
