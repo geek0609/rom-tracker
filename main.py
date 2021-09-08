@@ -110,7 +110,7 @@ for rom in repo:
     # I can use if result but i choose to do this for sake of my understanding
     if result != False:
         # need to be in this format <a href="http://www.example.com/">inline URL</a>
-        message = "New commit(s) in \n" + "<a href=\"" + "https://github.com/" + str(rom) + "\">" + str(rom) + "</a>\n\n\n"
+        message = "New commit(s) in \n" + "<a href=\"" + "https://github.com/" + str(rom) + "\">" + str(rom) + "</a>\n\n"
         number = 1
         result.reverse() # Else it shows way older commits first
         for commit in result:
@@ -120,7 +120,7 @@ for rom in repo:
                 number = number + 1
             else:
                 break
-        send_mes(message + "\n\n@rom_tracker | #" + str(rom).split("/")[0])
+        send_mes(message + "\n@rom_tracker | #" + str(rom).split("/")[0].replace("-", "_"))
         time.sleep(30)
         # to not spam api 
         update(rom, converted)
