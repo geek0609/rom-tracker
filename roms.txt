@@ -22,8 +22,8 @@ Havoc-OS/android_manifest
 Havoc-OS/android_frameworks_base
 lighthouse-os/manifest
 lighthouse-os/frameworks_base
-NezukoOS/manifest
-NezukoOS/frameworks_base
+ProjectRadiant/manifest
+ProjectRadiant/frameworks_base
 NusantaraProject-ROM/android_manifest
 NusantaraProject-ROM/android_frameworks_base
 Project-Fluid/manifest
