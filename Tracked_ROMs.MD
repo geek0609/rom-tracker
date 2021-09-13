@@ -28,8 +28,8 @@
 22. [Havoc-OS/android_frameworks_base](https://github.com/Havoc-OS/android_frameworks_base)
 23. [lighthouse-os/manifest](https://github.com/lighthouse-os/manifest)
 24. [lighthouse-os/frameworks_base](https://github.com/lighthouse-os/frameworks_base)
-25. [NezukoOS/manifest](https://github.com/NezukoOS/manifest)
-26. [NezukoOS/frameworks_base](https://github.com/NezukoOS/frameworks_base)
+25. [ProjectRadiant/manifest](https://github.com/ProjectRadiant/manifest)
+26. [ProjectRadiant/frameworks_base](https://github.com/ProjectRadiant/frameworks_base)
 27. [NusantaraProject-ROM/android_manifest](https://github.com/NusantaraProject-ROM/android_manifest)
 28. [NusantaraProject-ROM/android_frameworks_base](https://github.com/NusantaraProject-ROM/android_frameworks_base)
 29. [Project-Fluid/manifest](https://github.com/Project-Fluid/manifest)
@@ -145,4 +145,4 @@
 
 ### Total number of repos tracked: 138
 
-Last updated on : 2021-09-08 05:32:56.160821 UTC
+Last updated on : 2021-09-13 18:32:09.871460 UTC
