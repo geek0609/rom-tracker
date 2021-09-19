@@ -16,3 +16,10 @@ pa-gr/android_frameworks_base
 pa-gr/android_packages_apps_Settings
 PixelOS-ginkgo/frameworks_base
 PixelOS-ginkgo/packages_apps_Settings
+Project-Nova-UI/vendor_nova
+Project-Nova-UI/android_packages_apps_Settings
+Project-Nova-UI/android_frameworks_base
+Project-Nova-UI/packages_apps_Settings
+Project-Nova-UI/android
+Project-Nova-UI/packages_apps_Settings_NovaSettings
+Project-Nova-UI/manifest
