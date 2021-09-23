@@ -13,7 +13,7 @@ AOSiP/platform_frameworks_base
 Corvus-Q/android_manifest
 Corvus-Q/android_frameworks_base
 Corvus-R/android_manifest
-Corvus-R/android_frameworks_base
+Corvus-R/android_frameworks_base-staging
 DotOS/manifest
 DotOS/android_frameworks_base
 Evolution-X/manifest
