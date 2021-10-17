@@ -18,8 +18,6 @@ syberia-project/manifest
 syberia-project/platform_frameworks_base
 crdroidandroid/android
 crdroidandroid/android_frameworks_base
-Wave-Project/manifest
-Wave-Project/frameworks_base
 ShapeShiftOS/android_manifest
 ShapeShiftOS/android_frameworks_base
 PotatoProject/manifest
