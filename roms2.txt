@@ -18,3 +18,5 @@ PixelOS-ginkgo/frameworks_base
 PixelOS-ginkgo/packages_apps_Settings
 Komodo-OS-Rom/manifest
 Komodo-OS-Rom/frameworks_base
+AOSPK/manifest
+AOSPK/frameworks_base
