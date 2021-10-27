@@ -16,8 +16,6 @@ GrapheneOS/platform_manifest
 GrapheneOS/platform_frameworks_base
 ResurrectionRemix/platform_manifest
 ResurrectionRemix/android_frameworks_base
-Extended-UI/android_manifest
-Extended-UI/android_frameworks_base
 PixysOS/manifest
 PixysOS/frameworks_base
 Los-FE/manifest
