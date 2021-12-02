@@ -1,21 +1,18 @@
 # Custom ROM(s) Tracker 
-*Still work in progress*
 
 ## Introduction
 
-The main objective of this project is to make it easy for maintainers to know when each ROM Updates their manifest repo. I hope to help users too by letting them know if the source of a ROM is updated or no. The project is still in its initial stages and yet to grow up to its full functionality and neither has been tested as of now. Hoping to make it stable and make it properly functional soon. 
+The main objective of this project is to make it easy for developers to know when each ROM updates their manifest and/or FW/Base repo. This project hopes to help users by letting them know when the source of a ROM is updated.
 
 ## Links
 
 * [Telegram Channel](https://t.me/ROM_tracker)
-* [Personal Channel](https://t.me/ashwin_dev)
-* [General Discussion Group](https://t.me/ashwin_support)
 
 ## Technicalities
 
 * Should update itself every 30 minutes
 * Runs fully on GitHub actions
-For more my code is OpenSource, you make take a read at it
+For more, my code is open-source, you make take a read at it
   
 ## Currently tracked ROMs
 
