@@ -114,7 +114,7 @@ for rom in repo:
         number = 1
         result.reverse() # Else it shows way older commits first
         for commit in result:
-            if number <= 10:
+            if number < 30:
                 # need to be in this format <a href="http://www.example.com/">inline URL</a>
                 message = message + "<a href=\"" + "https://github.com/" + str(rom) + "/commit/" + str(commit) + "\">Commit " + str(number) + "</a>\n"
                 number = number + 1
