@@ -22,3 +22,5 @@ AOSPK/manifest
 AOSPK/frameworks_base
 projectarcana-aosp/manifest
 projectarcana-aosp/platform_frameworks_base
+PixelPlusUI-SnowCone/manifest
+PixelPlusUI-SnowCone/frameworks_base
