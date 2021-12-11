@@ -20,3 +20,5 @@ Komodo-OS-Rom/manifest
 Komodo-OS-Rom/frameworks_base
 AOSPK/manifest
 AOSPK/frameworks_base
+projectarcana-aosp/manifest
+projectarcana-aosp/platform_frameworks_base
