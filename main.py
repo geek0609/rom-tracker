@@ -96,7 +96,7 @@ repo = file.readlines()
 for rom in repo:
     rom = rom.replace("\n", "")
     file_name = rom.replace("/", "_") + ".txt"
-    req = requests.get("https://api.github.com/repos/" + rom + "/commits").content
+    req = requests.get("https://api.github.com/repos/" + rom + "/commits?per_page=100").content
     converted = json.loads(req)
     if os.path.isfile("roms/" + file_name):
         print(file_name + " Exists")
@@ -114,10 +114,12 @@ for rom in repo:
         number = 1
         result.reverse() # Else it shows way older commits first
         for commit in result:
-            if number <= 30:
+            if number <= 100:
                 # need to be in this format <a href="http://www.example.com/">inline URL</a>
                 message = message + "<a href=\"" + "https://github.com/" + str(rom) + "/commit/" + str(commit) + "\">Commit " + str(number) + "</a>\n"
                 number = number + 1
+                if number == 100:
+                    message = message + "There may be more commits, only upto 100 are shown here\n"
             else:
                 break
         send_mes(message + "\n@rom_tracker | #" + str(rom).split("/")[0].replace("-", "_"))
