@@ -114,13 +114,12 @@ for rom in repo:
         number = 1
         result.reverse() # Else it shows way older commits first
         for commit in result:
-            if number <= 100:
+            if number <= 70:
                 # need to be in this format <a href="http://www.example.com/">inline URL</a>
                 message = message + "<a href=\"" + "https://github.com/" + str(rom) + "/commit/" + str(commit) + "\">Commit " + str(number) + "</a>\n"
                 number = number + 1
-                if number == 100:
-                    message = message + "There may be more commits, only upto 100 are shown here\n"
             else:
+                message = message + "There may be more commits, only upto 70 are shown here\n"
                 break
         send_mes(message + "\n@rom_tracker | #" + str(rom).split("/")[0].replace("-", "_"))
         time.sleep(30)
