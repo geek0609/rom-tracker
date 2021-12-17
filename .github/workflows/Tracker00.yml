@@ -46,7 +46,7 @@ jobs:
     # BOT_ID and CHAT_ID are used to communicate with Telegram API
     steps:
       - name: Install Dep
-        run: sudo pip install pyTelegramBotAPI
+        run: sudo pip install pyTelegramBotAPI && sudo pip install telegraph
 
       - name: Checkout Repo
         uses: actions/checkout@v2

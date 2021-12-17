@@ -24,6 +24,7 @@ import requests
 import json
 import time
 import random
+from telegraph import Telegraph
 
 
 def send_mes(text):
@@ -43,6 +44,8 @@ BOT_API = sys.argv[2]
 CHAT_ID = -1001701248805
 REPO_LIST = sys.argv[3]
 bot = telebot.TeleBot(BOT_API, parse_mode="HTML")
+tgraph = Telegraph()
+tgraph.create_account(short_name="ROM-Tracker BOT")
 
 
 def update(repo, converted):
@@ -111,17 +114,88 @@ for rom in repo:
     if result != False:
         # need to be in this format <a href="http://www.example.com/">inline URL</a>
         message = "New commit(s) in \n" + "<a href=\"" + "https://github.com/" + str(rom) + "\">" + str(rom) + "</a>\n\n"
+        telegraph_title = "New commit(s) in \n" + str(rom) + ""
+        telegraph_commit_content = ["",]
+        telegraph_page = 0
+        telegraph_commit_content[0] = "<h4>GitHub Repository Link: <a href=\"https://github.com/" + \
+                                       str(rom) + "\">" + str(rom) + "</a> </h4> \n"
         number = 1
         result.reverse() # Else it shows way older commits first
         for commit in result:
             if number <= 70:
                 # need to be in this format <a href="http://www.example.com/">inline URL</a>
                 message = message + "<a href=\"" + "https://github.com/" + str(rom) + "/commit/" + str(commit) + "\">Commit " + str(number) + "</a>\n"
-                number = number + 1
+            if number == 70:
+                message = message + "\nThere may be more commits, only upto 70 are shown here.\n"
+
+            for i in converted:
+                if i["sha"] == commit:
+                    print("Found commit")
+                    try:
+                        commit_message = i["commit"]["message"]
+                    except Exception as e:
+                        commit_message = "Unable to get info"
+                    try:
+                        if i["author"] is not None:
+                            author = i["author"]["login"]
+                        else:
+                            author = i["commit"]["author"]["name"]
+                    except Exception as e:
+                        author = "Unable to get info"
+                    try:
+                        author_email = i["commit"]["author"]["email"]
+                    except Exception as e:
+                        author_email = "Unable to get info"
+                    try:
+                        if i["committer"] is not None:
+                            committer = i["committer"]["login"]
+                        else:
+                            committer = i["commit"]["committer"]["name"]
+                    except Exception as e:
+                        committer = "Unable to get info"
+                    try:
+                        committer_email = i["commit"]["committer"]["email"]
+                    except Exception as e:
+                        committer_email = "Unable to get info"
+
+                    if len(telegraph_commit_content[telegraph_page]) > 40000:
+                        telegraph_page += 1
+                        telegraph_commit_content.append("")
+
+                    telegraph_commit_content[telegraph_page] = telegraph_commit_content[telegraph_page] + "<h4>Commit " + str(number) + \
+                                               "</h4>" +\
+                                               commit_message.replace("<", "&#60;").replace(">", "&#62;") + \
+                                               "\n\n<b>Author:</b> " + author + "&#60;" + \
+                                               author_email + "&#62;" + "\n<b>Committer:</b> " + \
+                                               committer + "&#60;" + committer_email + \
+                                               "&#62;" + "\n<b>Commit ID: </b><code>" + str(commit) + "</code>\n" + \
+                                               "<b>URL: </b> <a href=\"https://github.com/" + str(rom) + "/commit/"\
+                                               + str(commit) + "\"> Click Me</a>\n"
+            number += 1
+
+        print (telegraph_commit_content)
+        telegraph_urls = []
+        footer = ""
+        last_link = None
+        for page in reversed(telegraph_commit_content):
+
+            if last_link is None:
+                footer = "<br>This is the last page"
             else:
-                message = message + "There may be more commits, only upto 70 are shown here\n"
-                break
-        send_mes(message + "\n@rom_tracker | #" + str(rom).split("/")[0].replace("-", "_"))
+                footer = "<br><a href=\"" + last_link + "\">Next Page</a>"
+
+            tgraph_response = tgraph.create_page(title=telegraph_title,
+                                                 html_content=page.replace("\n", " <br> ") + "<br>@rom_tracker | #" + \
+                                                 str(rom).split("/")[0].replace("-", "_") + footer,
+                                                 author_name="ROM Tracker BOT",
+                                                 author_url="https://t.me/ROM_tracker")
+
+            telegraph_urls.append(tgraph_response["url"])
+            last_link = tgraph_response["url"]
+
+        send_mes(message + "\n<a href=\"" + last_link + "\">Fully Detailed History (Upto 100 New Commits)</a>" +
+                 "\n\n@rom_tracker | #" + str(rom).split("/")[0].replace("-", "_"))
+
         time.sleep(30)
         # to not spam api 
         update(rom, converted)
