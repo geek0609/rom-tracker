@@ -185,7 +185,7 @@ for rom in repo:
                 footer = "<br><a href=\"" + last_link + "\">Next Page</a>"
 
             tgraph_response = tgraph.create_page(title=telegraph_title,
-                                                 html_content=page.replace("\n", " <br> ") + "<br>@rom_tracker | #" + \
+                                                 html_content=page.replace("\n", " <br> ") + "<br>@ROMTracker | #" + \
                                                  str(rom).split("/")[0].replace("-", "_") + footer,
                                                  author_name="ROM Tracker BOT",
                                                  author_url="https://t.me/ROM_tracker")
@@ -194,7 +194,7 @@ for rom in repo:
             last_link = tgraph_response["url"]
 
         send_mes(message + "\n<a href=\"" + last_link + "\">Fully Detailed History (Upto 100 New Commits)</a>" +
-                 "\n\n@rom_tracker | #" + str(rom).split("/")[0].replace("-", "_"))
+                 "\n\n@ROMTracker | #" + str(rom).split("/")[0].replace("-", "_"))
 
         time.sleep(30)
         # to not spam api 
