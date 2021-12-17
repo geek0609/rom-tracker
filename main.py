@@ -41,7 +41,7 @@ for i in range(timeout):
 
 # Init telegram bot
 BOT_API = sys.argv[2]
-CHAT_ID = -1001701248805
+CHAT_ID = sys.argv[1]
 REPO_LIST = sys.argv[3]
 bot = telebot.TeleBot(BOT_API, parse_mode="HTML")
 tgraph = Telegraph()
