@@ -24,3 +24,7 @@ projectarcana-aosp/manifest
 projectarcana-aosp/platform_frameworks_base
 PixelPlusUI-SnowCone/manifest
 PixelPlusUI-SnowCone/frameworks_base
+Project-Elixir/manifest
+Project-Elixir/frameworks_base
+TeamWin/buildtree_manifests
+TeamWin/android_bootable_recovery
