@@ -26,3 +26,5 @@ BlissRoms/platform_manifest
 BlissRoms/platform_frameworks_base
 CarbonROM/android
 CarbonROM/android_frameworks_base
+ProjectStreak/platform_manifest
+ProjectStreak/platform_frameworks_base
