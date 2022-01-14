@@ -80,8 +80,8 @@
 74. [Bootleggers-BrokenLab/frameworks_base](https://github.com/Bootleggers-BrokenLab/frameworks_base)
 75. [pa-gr/android_frameworks_base](https://github.com/pa-gr/android_frameworks_base)
 76. [pa-gr/android_packages_apps_Settings](https://github.com/pa-gr/android_packages_apps_Settings)
-77. [PixelOS-ginkgo/frameworks_base](https://github.com/PixelOS-ginkgo/frameworks_base)
-78. [PixelOS-ginkgo/packages_apps_Settings](https://github.com/PixelOS-ginkgo/packages_apps_Settings)
+77. [IronLOS-Project/android_manifest](https://github.com/IronLOS-Project/android_manifest)
+78. [IronLOS-Project/android_manifest](https://github.com/IronLOS-Project/android_manifest)
 79. [Komodo-OS-Rom/manifest](https://github.com/Komodo-OS-Rom/manifest)
 80. [Komodo-OS-Rom/frameworks_base](https://github.com/Komodo-OS-Rom/frameworks_base)
 81. [AOSPK/manifest](https://github.com/AOSPK/manifest)
@@ -157,4 +157,4 @@
 
 ### Total number of repos tracked: 150
 
-Last updated on : 2022-01-13 08:26:41.660333 UTC
+Last updated on : 2022-01-14 09:42:31.849164 UTC
