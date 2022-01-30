@@ -79,6 +79,10 @@ def get_diff (repo, converted):
         prev_sha.append(line.replace("\n", ""))
     print(shas)
     print(prev_sha)
+    reversed_sha = shas
+    reversed_sha.reverse()
+    if reversed_sha[shas.__len__()-1] in prev_sha:
+        return False
     if shas == prev_sha:
         return False
     first_set = set(shas)
