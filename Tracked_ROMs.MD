@@ -19,7 +19,7 @@
 13. [Corvus-Q/android_manifest](https://github.com/Corvus-Q/android_manifest)
 14. [Corvus-Q/android_frameworks_base](https://github.com/Corvus-Q/android_frameworks_base)
 15. [Corvus-R/android_manifest](https://github.com/Corvus-R/android_manifest)
-16. [Corvus-R/android_frameworks_base-staging](https://github.com/Corvus-R/android_frameworks_base-staging)
+16. [Corvus-R/android_frameworks_base](https://github.com/Corvus-R/android_frameworks_base)
 17. [DotOS/manifest](https://github.com/DotOS/manifest)
 18. [DotOS/android_frameworks_base](https://github.com/DotOS/android_frameworks_base)
 19. [Evolution-X/manifest](https://github.com/Evolution-X/manifest)
@@ -176,4 +176,4 @@
 
 ### Total number of repos tracked: 169
 
-Last updated on : 2022-01-30 13:45:55.130872 UTC
+Last updated on : 2022-01-30 13:49:23.223288 UTC
