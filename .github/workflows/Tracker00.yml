@@ -1,18 +1,11 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Tracker0
 on:
-  # Should make sure it runs regularly
   schedule:
     - cron: '*/30 * * * *'
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called track
   track0:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
       BOT_API: ${{ secrets.BOT_API }}
@@ -135,6 +128,110 @@ jobs:
 
       - name: Run main.py
         run: sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms4.txt
+
+      - name: Commit and Push
+        if: ${{ always() }}
+        run: sudo bash git_commit.sh
+
+  track5:
+    if: always()
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    env:
+      BOT_API: ${{ secrets.BOT_API }}
+      CHAT_ID: ${{ secrets.CHAT }}
+    # BOT_ID and CHAT_ID are used to communicate with Telegram API
+    steps:
+      - name: Install Dep
+        run: sudo pip install pyTelegramBotAPI && sudo pip install telegraph
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          repository: geek0609/rom-tracker
+          token: ${{ secrets.PAT }}
+          ref: new-implementation
+
+      - name: Run main.py
+        run: sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms5.txt
+
+      - name: Commit and Push
+        if: ${{ always() }}
+        run: sudo bash git_commit.sh
+
+  track6:
+    if: always()
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    env:
+      BOT_API: ${{ secrets.BOT_API }}
+      CHAT_ID: ${{ secrets.CHAT }}
+    # BOT_ID and CHAT_ID are used to communicate with Telegram API
+    steps:
+      - name: Install Dep
+        run: sudo pip install pyTelegramBotAPI && sudo pip install telegraph
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          repository: geek0609/rom-tracker
+          token: ${{ secrets.PAT }}
+          ref: new-implementation
+
+      - name: Run main.py
+        run: sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms6.txt
+
+      - name: Commit and Push
+        if: ${{ always() }}
+        run: sudo bash git_commit.sh
+
+  track7:
+    if: always()
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    env:
+      BOT_API: ${{ secrets.BOT_API }}
+      CHAT_ID: ${{ secrets.CHAT }}
+    # BOT_ID and CHAT_ID are used to communicate with Telegram API
+    steps:
+      - name: Install Dep
+        run: sudo pip install pyTelegramBotAPI && sudo pip install telegraph
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          repository: geek0609/rom-tracker
+          token: ${{ secrets.PAT }}
+          ref: new-implementation
+
+      - name: Run main.py
+        run: sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms7.txt
+
+      - name: Commit and Push
+        if: ${{ always() }}
+        run: sudo bash git_commit.sh
+
+  track8:
+    if: always()
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    env:
+      BOT_API: ${{ secrets.BOT_API }}
+      CHAT_ID: ${{ secrets.CHAT }}
+    # BOT_ID and CHAT_ID are used to communicate with Telegram API
+    steps:
+      - name: Install Dep
+        run: sudo pip install pyTelegramBotAPI && sudo pip install telegraph
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          repository: geek0609/rom-tracker
+          token: ${{ secrets.PAT }}
+          ref: new-implementation
+
+      - name: Run main.py
+        run: sudo python3 main.py ${{ secrets.CHAT }} ${{ secrets.BOT_API }} roms8.txt
 
       - name: Commit and Push
         if: ${{ always() }}

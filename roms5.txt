@@ -1,0 +1,4 @@
+The-RAVEN-OS/manifest
+The-RAVEN-OS/frameworks_base
+TeamWin/android_bootable_recovery
+TeamWin/external_magisk-prebuilt

@@ -1,0 +1,6 @@
+VoltageOS/frameworks_base
+VoltageOS/manifest
+StagOS/android_frameworks_base
+StagOS/manifest
+elytraOS/frameworks_base
+elytraOS/manifest
