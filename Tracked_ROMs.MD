@@ -154,7 +154,26 @@
 148. [ConquerOS/frameworks_base](https://github.com/ConquerOS/frameworks_base)
 149. [TenX-OS/manifest_TenX](https://github.com/TenX-OS/manifest_TenX)
 150. [TenX-OS/frameworks_base](https://github.com/TenX-OS/frameworks_base)
+151. [The-RAVEN-OS/manifest](https://github.com/The-RAVEN-OS/manifest)
+152. [The-RAVEN-OS/frameworks_base](https://github.com/The-RAVEN-OS/frameworks_base)
+153. [TeamWin/android_bootable_recovery](https://github.com/TeamWin/android_bootable_recovery)
+154. [TeamWin/external_magisk-prebuilt](https://github.com/TeamWin/external_magisk-prebuilt)
+155. [topjohnwu/Magisk](https://github.com/topjohnwu/Magisk)
+156. [IronOSProject/android_manifest](https://github.com/IronOSProject/android_manifest)
+157. [IronOSProject/android_frameworks_base](https://github.com/IronOSProject/android_frameworks_base)
+158. [StagOS-Beta/manifest](https://github.com/StagOS-Beta/manifest)
+159. [StagOS-Beta/android_frameworks_base](https://github.com/StagOS-Beta/android_frameworks_base)
+160. [VoltageOS/frameworks_base](https://github.com/VoltageOS/frameworks_base)
+161. [VoltageOS/manifest](https://github.com/VoltageOS/manifest)
+162. [StagOS/android_frameworks_base](https://github.com/StagOS/android_frameworks_base)
+163. [StagOS/manifest](https://github.com/StagOS/manifest)
+164. [elytraOS/frameworks_base](https://github.com/elytraOS/frameworks_base)
+165. [elytraOS/manifest](https://github.com/elytraOS/manifest)
+166. [Project-Mushroom/platform_frameworks_base](https://github.com/Project-Mushroom/platform_frameworks_base)
+167. [Project-Mushroom/platform_manifest](https://github.com/Project-Mushroom/platform_manifest)
+168. [Citric-OS/android_manifest](https://github.com/Citric-OS/android_manifest)
+169. [Citric-OS/android_frameworks_base](https://github.com/Citric-OS/android_frameworks_base)
 
-### Total number of repos tracked: 150
+### Total number of repos tracked: 169
 
-Last updated on : 2022-01-14 09:42:31.849164 UTC
+Last updated on : 2022-01-30 13:45:55.130872 UTC
