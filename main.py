@@ -101,6 +101,8 @@ file = open(REPO_LIST, "r")
 repo = file.readlines()
 # Read roms from roms.txt
 for rom in repo:
+    if rom == "\n" or rom == "" or rom == " " or rom.startswith("#"):
+        continue
     rom = rom.replace("\n", "")
     file_name = rom.replace("/", "_") + ".txt"
     req = requests.get("https://api.github.com/repos/" + rom + "/commits?per_page=100").content
