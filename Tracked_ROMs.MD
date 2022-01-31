@@ -161,17 +161,20 @@
 155. [IronOSProject/android_frameworks_base](https://github.com/IronOSProject/android_frameworks_base)
 156. [StagOS-Beta/manifest](https://github.com/StagOS-Beta/manifest)
 157. [StagOS-Beta/android_frameworks_base](https://github.com/StagOS-Beta/android_frameworks_base)
-158. [VoltageOS/frameworks_base](https://github.com/VoltageOS/frameworks_base)
-159. [VoltageOS/manifest](https://github.com/VoltageOS/manifest)
-160. [StagOS/android_frameworks_base](https://github.com/StagOS/android_frameworks_base)
-161. [StagOS/manifest](https://github.com/StagOS/manifest)
-162. [elytraOS/frameworks_base](https://github.com/elytraOS/frameworks_base)
-163. [elytraOS/manifest](https://github.com/elytraOS/manifest)
-164. [Project-Mushroom/platform_frameworks_base](https://github.com/Project-Mushroom/platform_frameworks_base)
-165. [Project-Mushroom/platform_manifest](https://github.com/Project-Mushroom/platform_manifest)
-166. [Citric-OS/android_manifest](https://github.com/Citric-OS/android_manifest)
-167. [Citric-OS/android_frameworks_base](https://github.com/Citric-OS/android_frameworks_base)
+158. [LawnchairLauncher/lawnicons](https://github.com/LawnchairLauncher/lawnicons)
+159. [VoltageOS/frameworks_base](https://github.com/VoltageOS/frameworks_base)
+160. [VoltageOS/manifest](https://github.com/VoltageOS/manifest)
+161. [StagOS/android_frameworks_base](https://github.com/StagOS/android_frameworks_base)
+162. [StagOS/manifest](https://github.com/StagOS/manifest)
+163. [elytraOS/frameworks_base](https://github.com/elytraOS/frameworks_base)
+164. [elytraOS/manifest](https://github.com/elytraOS/manifest)
+165. [Project-Mushroom/platform_frameworks_base](https://github.com/Project-Mushroom/platform_frameworks_base)
+166. [Project-Mushroom/platform_manifest](https://github.com/Project-Mushroom/platform_manifest)
+167. [Citric-OS/android_manifest](https://github.com/Citric-OS/android_manifest)
+168. [Citric-OS/android_frameworks_base](https://github.com/Citric-OS/android_frameworks_base)
+169. [LineageOS/android_packages_apps_Trebuchet](https://github.com/LineageOS/android_packages_apps_Trebuchet)
+170. [LawnchairLauncher/lawnchair](https://github.com/LawnchairLauncher/lawnchair)
 
-### Total number of repos tracked: 167
+### Total number of repos tracked: 170
 
-Last updated on : 2022-01-31 08:42:31.527638 UTC
+Last updated on : 2022-01-31 09:01:35.119741 UTC
