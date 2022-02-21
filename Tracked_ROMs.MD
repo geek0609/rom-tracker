@@ -174,7 +174,9 @@
 168. [Citric-OS/android_frameworks_base](https://github.com/Citric-OS/android_frameworks_base)
 169. [LineageOS/android_packages_apps_Trebuchet](https://github.com/LineageOS/android_packages_apps_Trebuchet)
 170. [LawnchairLauncher/lawnchair](https://github.com/LawnchairLauncher/lawnchair)
+171. [ProjectKasumi/android](https://github.com/ProjectKasumi/android)
+172. [ProjectKasumi/android_frameworks_base](https://github.com/ProjectKasumi/android_frameworks_base)
 
-### Total number of repos tracked: 170
+### Total number of repos tracked: 172
 
-Last updated on : 2022-01-31 09:01:35.119741 UTC
+Last updated on : 2022-02-21 12:17:19.162797 UTC
