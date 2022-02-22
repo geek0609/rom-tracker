@@ -4,3 +4,5 @@ StagOS/android_frameworks_base
 StagOS/manifest
 elytraOS/frameworks_base
 elytraOS/manifest
+Arc-Team/android
+Arc-Team/android_frameworks_base
