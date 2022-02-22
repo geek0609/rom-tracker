@@ -168,15 +168,17 @@
 162. [StagOS/manifest](https://github.com/StagOS/manifest)
 163. [elytraOS/frameworks_base](https://github.com/elytraOS/frameworks_base)
 164. [elytraOS/manifest](https://github.com/elytraOS/manifest)
-165. [Project-Mushroom/platform_frameworks_base](https://github.com/Project-Mushroom/platform_frameworks_base)
-166. [Project-Mushroom/platform_manifest](https://github.com/Project-Mushroom/platform_manifest)
-167. [Citric-OS/android_manifest](https://github.com/Citric-OS/android_manifest)
-168. [Citric-OS/android_frameworks_base](https://github.com/Citric-OS/android_frameworks_base)
-169. [LineageOS/android_packages_apps_Trebuchet](https://github.com/LineageOS/android_packages_apps_Trebuchet)
-170. [LawnchairLauncher/lawnchair](https://github.com/LawnchairLauncher/lawnchair)
-171. [ProjectKasumi/android](https://github.com/ProjectKasumi/android)
-172. [ProjectKasumi/android_frameworks_base](https://github.com/ProjectKasumi/android_frameworks_base)
+165. [Arc-Team/android](https://github.com/Arc-Team/android)
+166. [Arc-Team/android_frameworks_base](https://github.com/Arc-Team/android_frameworks_base)
+167. [Project-Mushroom/platform_frameworks_base](https://github.com/Project-Mushroom/platform_frameworks_base)
+168. [Project-Mushroom/platform_manifest](https://github.com/Project-Mushroom/platform_manifest)
+169. [Citric-OS/android_manifest](https://github.com/Citric-OS/android_manifest)
+170. [Citric-OS/android_frameworks_base](https://github.com/Citric-OS/android_frameworks_base)
+171. [LineageOS/android_packages_apps_Trebuchet](https://github.com/LineageOS/android_packages_apps_Trebuchet)
+172. [LawnchairLauncher/lawnchair](https://github.com/LawnchairLauncher/lawnchair)
+173. [ProjectKasumi/android](https://github.com/ProjectKasumi/android)
+174. [ProjectKasumi/android_frameworks_base](https://github.com/ProjectKasumi/android_frameworks_base)
 
-### Total number of repos tracked: 172
+### Total number of repos tracked: 174
 
-Last updated on : 2022-02-21 12:17:19.162797 UTC
+Last updated on : 2022-02-22 09:41:38.788110 UTC
