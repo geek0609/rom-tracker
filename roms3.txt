@@ -1,7 +1,7 @@
 ProtonAOSP/android_manifest
 ProtonAOSP/android_frameworks_base
 StyxProject/manifest
-StyxProject/frameworks_base
+#StyxProject/frameworks_base
 yaap/manifest
 yaap/frameworks_base
 PixelOS-Pixelish/manifest
