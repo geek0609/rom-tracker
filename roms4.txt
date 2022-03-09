@@ -3,7 +3,7 @@ dotOS-FE/android_frameworks_base
 FlokoROM/manifesto
 FlokoROM/frameworks_base
 #Project-LegionOS/manifest
-#Project-LegionOS/frameworks_base
+Project-LegionOS/frameworks_base
 SpiceOS/android
 SpiceOS/android_frameworks_base
 SuperiorOS/manifest
