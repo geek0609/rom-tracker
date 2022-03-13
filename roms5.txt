@@ -2,3 +2,5 @@ The-RAVEN-OS/manifest
 The-RAVEN-OS/frameworks_base
 TeamWin/android_bootable_recovery
 TeamWin/external_magisk-prebuilt
+Project-Kaleidoscope/android_frameworks_base
+Project-Kaleidoscope/android_manifest
