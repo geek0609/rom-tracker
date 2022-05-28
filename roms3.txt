@@ -6,8 +6,6 @@ yaap/manifest
 yaap/frameworks_base
 PixelOS-Pixelish/manifest
 PixelOS-Pixelish/frameworks_base
-LESSAOSP/manifest
-LESSAOSP/frameworks_base
 Colt-Enigma/platform_manifest
 Colt-Enigma/platform_frameworks_base
 RevengeOS/android_manifest
