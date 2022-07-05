@@ -62,8 +62,8 @@
 56. [BlissRoms/platform_frameworks_base](https://github.com/BlissRoms/platform_frameworks_base)
 57. [CarbonROM/android](https://github.com/CarbonROM/android)
 58. [CarbonROM/android_frameworks_base](https://github.com/CarbonROM/android_frameworks_base)
-59. [ProjectStreak/platform_manifest](https://github.com/ProjectStreak/platform_manifest)
-60. [ProjectStreak/platform_frameworks_base](https://github.com/ProjectStreak/platform_frameworks_base)
+59. [tequilaOS/platform_manifest](https://github.com/tequilaOS/platform_manifest)
+60. [tequilaOS/platform_frameworks_base](https://github.com/tequilaOS/platform_frameworks_base)
 61. [Project-Xtended/manifest](https://github.com/Project-Xtended/manifest)
 62. [Project-Xtended/frameworks_base](https://github.com/Project-Xtended/frameworks_base)
 63. [exthmui/android](https://github.com/exthmui/android)
@@ -181,4 +181,4 @@
 
 ### Total number of repos tracked: 174
 
-Last updated on : 2022-05-28 14:38:25.867206 UTC
+Last updated on : 2022-07-05 14:44:29.911832 UTC
