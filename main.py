@@ -26,8 +26,8 @@ import time
 import random
 from telegraph import Telegraph
 
-open("Failing.log", "w+").close()
-LogFile = open("Failing.log", "a")
+open("Failing" + REPO_LIST + ".log", "w+").close()
+LogFile = open("Failing" + REPO_LIST + ".log", "a")
 
 def send_mes(text):
     if text == "":
@@ -170,7 +170,7 @@ for rom in repo:
                     except Exception as e:
                         committer_email = "Unable to get info"
 
-                    if len(telegraph_commit_content[telegraph_page]) > 40000:
+                    if len(telegraph_commit_content[telegraph_page]) > 30000:
                         telegraph_page += 1
                         telegraph_commit_content.append("")
 
