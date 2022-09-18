@@ -171,7 +171,7 @@ for rom in repo:
                     except Exception as e:
                         committer_email = "Unable to get info"
 
-                    if len(telegraph_commit_content[telegraph_page]) > 30000:
+                    if len(telegraph_commit_content[telegraph_page]) > 20000:
                         telegraph_page += 1
                         telegraph_commit_content.append("")
 
