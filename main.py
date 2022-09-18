@@ -26,8 +26,7 @@ import time
 import random
 from telegraph import Telegraph
 
-open("Failing" + REPO_LIST + ".log", "w+").close()
-LogFile = open("Failing" + REPO_LIST + ".log", "a")
+
 
 def send_mes(text):
     if text == "":
@@ -49,6 +48,8 @@ bot = telebot.TeleBot(BOT_API, parse_mode="HTML")
 tgraph = Telegraph()
 tgraph.create_account(short_name="ROM-Tracker BOT")
 
+open("Failing" + REPO_LIST + ".log", "w+").close()
+LogFile = open("Failing" + REPO_LIST + ".log", "a")
 
 def update(repo, converted):
     file_name = repo.replace("/", "_") + ".txt"
