@@ -29,6 +29,14 @@ jobs:
         if: ${{ always() }}
         run: sudo bash git_commit.sh
 
+      - name: Upload Logs
+        uses: actions/upload-artifact@v2
+        if: ${{ always() }}
+        with:
+          if-no-files-found: ignore
+          name: Logs
+          path: Failing.log
+
   track1:
     if: always()
     # The type of runner that the job will run on
@@ -54,6 +62,14 @@ jobs:
       - name: Commit and Push
         if: ${{ always() }}
         run: sudo bash git_commit.sh
+
+      - name: Upload Logs
+        uses: actions/upload-artifact@v2
+        if: ${{ always() }}
+        with:
+          if-no-files-found: ignore
+          name: Logs
+          path: Failing.log
 
   track2:
     if: always()
@@ -81,6 +97,14 @@ jobs:
         if: ${{ always() }}
         run: sudo bash git_commit.sh
 
+      - name: Upload Logs
+        uses: actions/upload-artifact@v2
+        if: ${{ always() }}
+        with:
+          if-no-files-found: ignore
+          name: Logs
+          path: Failing.log
+
   track3:
     if: always()
     # The type of runner that the job will run on
@@ -106,6 +130,14 @@ jobs:
       - name: Commit and Push
         if: ${{ always() }}
         run: sudo bash git_commit.sh
+
+      - name: Upload Logs
+        uses: actions/upload-artifact@v2
+        if: ${{ always() }}
+        with:
+          if-no-files-found: ignore
+          name: Logs
+          path: Failing.log
 
   track4:
     if: always()
@@ -133,6 +165,14 @@ jobs:
         if: ${{ always() }}
         run: sudo bash git_commit.sh
 
+      - name: Upload Logs
+        uses: actions/upload-artifact@v2
+        if: ${{ always() }}
+        with:
+          if-no-files-found: ignore
+          name: Logs
+          path: Failing.log
+
   track5:
     if: always()
     # The type of runner that the job will run on
@@ -158,6 +198,14 @@ jobs:
       - name: Commit and Push
         if: ${{ always() }}
         run: sudo bash git_commit.sh
+
+      - name: Upload Logs
+        uses: actions/upload-artifact@v2
+        if: ${{ always() }}
+        with:
+          if-no-files-found: ignore
+          name: Logs
+          path: Failing.log
 
   track6:
     if: always()
@@ -185,6 +233,14 @@ jobs:
         if: ${{ always() }}
         run: sudo bash git_commit.sh
 
+      - name: Upload Logs
+        uses: actions/upload-artifact@v2
+        if: ${{ always() }}
+        with:
+          if-no-files-found: ignore
+          name: Logs
+          path: Failing.log
+
   track7:
     if: always()
     # The type of runner that the job will run on
@@ -211,6 +267,14 @@ jobs:
         if: ${{ always() }}
         run: sudo bash git_commit.sh
 
+      - name: Upload Logs
+        uses: actions/upload-artifact@v2
+        if: ${{ always() }}
+        with:
+          if-no-files-found: ignore
+          name: Logs
+          path: Failing.log
+
   track8:
     if: always()
     # The type of runner that the job will run on
@@ -236,3 +300,11 @@ jobs:
       - name: Commit and Push
         if: ${{ always() }}
         run: sudo bash git_commit.sh
+
+      - name: Upload Logs
+        uses: actions/upload-artifact@v2
+        if: ${{ always() }}
+        with:
+          if-no-files-found: ignore
+          name: Logs
+          path: Failing.log

@@ -26,6 +26,8 @@ import time
 import random
 from telegraph import Telegraph
 
+open("Failing.log", "w+").close()
+LogFile = open("Failing.log", "a")
 
 def send_mes(text):
     if text == "":
@@ -70,8 +72,12 @@ def get_diff (repo, converted):
     # converted = json.loads(req)
     # Fetches new commits (if any) from API
     shas = []
-    for x in converted:
-        shas.append(x['sha'])
+    try:
+        for x in converted:
+            shas.append(x['sha'])
+    except:
+        LogFile.write( repo + "\n")
+        return False
     # Reads previous commits from where it is stored
     prev_sha = []
     file = open("roms/" + file_name, "r")
