@@ -197,14 +197,18 @@ for rom in repo:
             else:
                 footer = "<br><a href=\"" + last_link + "\">Next Page</a>"
 
-            tgraph_response = tgraph.create_page(title=telegraph_title,
-                                                 html_content=page.replace("\n", " <br> ") + "<br>@ROMTracker | #" + \
-                                                 str(rom).split("/")[0].replace("-", "_") + footer,
-                                                 author_name="ROM Tracker BOT",
-                                                 author_url="https://t.me/ROM_tracker")
+            try: 
+                tgraph_response = tgraph.create_page(title=telegraph_title,
+                                                    html_content=page.replace("\n", " <br> ") + "<br>@ROMTracker | #" + \
+                                                    str(rom).split("/")[0].replace("-", "_") + footer,
+                                                    author_name="ROM Tracker BOT",
+                                                    author_url="https://t.me/ROM_tracker")
 
-            telegraph_urls.append(tgraph_response["url"])
-            last_link = tgraph_response["url"]
+                telegraph_urls.append(tgraph_response["url"])
+                last_link = tgraph_response["url"]
+            except:
+                telegraph_urls.append("unable to get")
+                last_link = "unable to get"
 
         send_mes(message + "\n<a href=\"" + last_link + "\">Fully Detailed History (Upto 100 New Commits)</a>" +
                  "\n\n@ROMTracker | #" + str(rom).split("/")[0].replace("-", "_"))
